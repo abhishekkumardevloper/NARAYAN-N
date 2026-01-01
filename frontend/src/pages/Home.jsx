@@ -48,7 +48,7 @@ const Home = () => {
          {/* LOGO */}
 <div className="logo-wrapper cursor-pointer">
   <img
-    src="/n1.png"
+    src="/avhi.png"
     alt="NarayanGrowth Logo"
     className="logo"
   />
