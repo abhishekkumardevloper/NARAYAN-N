@@ -93,9 +93,6 @@ const Home = () => {
     )}
   </header>
 </div>
-
-
-      {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-950 to-black">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mx-auto text-center">
