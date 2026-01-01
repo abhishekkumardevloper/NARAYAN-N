@@ -45,17 +45,18 @@ const Home = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
-          {/* LOGO */}
-          <div className="flex items-center space-x-3 cursor-pointer">
-            <img
-              src="/n1.png"
-              alt="NarayanGrowth Logo"
-              className="w-10 h-10 object-contain"
-            />
-            <span className="text-xl font-bold text-white tracking-wide">
-              Narayan<span className="text-orange-500">Growth</span>
-            </span>
-          </div>
+         {/* LOGO */}
+<div className="logo-wrapper cursor-pointer">
+  <img
+    src="/n1.png"
+    alt="NarayanGrowth Logo"
+    className="logo"
+  />
+  <span className="logo-text">
+    Narayan<span className="logo-highlight">Growth</span>
+  </span>
+</div>
+
 
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center space-x-8">
