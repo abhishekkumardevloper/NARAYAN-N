@@ -48,7 +48,7 @@ const Home = () => {
           {/* LOGO */}
           <div className="flex items-center space-x-3 cursor-pointer">
             <img
-              src="n1.png"
+              src="/n1.png"
               alt="NarayanGrowth Logo"
               className="w-10 h-10 object-contain"
             />
