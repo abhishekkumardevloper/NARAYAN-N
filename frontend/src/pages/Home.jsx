@@ -115,7 +115,6 @@ const Home = () => {
         </div>
       </div>
     </section>
-  </div>
 
 
       {/* About Section */}
