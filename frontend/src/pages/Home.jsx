@@ -39,81 +39,86 @@ const Home = () => {
   };
 
   return (
-   <div className="min-h-screen bg-black">
-  {/* Header */}
-  <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-between items-center h-16">
+  <>
+  <div className="min-h-screen bg-black">
+    {/* Header */}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
 
-        {/* LOGO (CHANGED ONLY THIS PART) */}
-        <div className="flex items-center space-x-3 cursor-pointer">
-          <img
-            src="/Screenshot 2025-10-22 125814.png"
-            alt="NarayanGrowth Logo"
-            className="w-10 h-10 object-contain"
-          />
-          <span className="text-xl font-bold text-white tracking-wide">
-            Narayan<span className="text-orange-500">Growth</span>
-          </span>
-        </div>
+          {/* LOGO */}
+          <div className="flex items-center space-x-3 cursor-pointer">
+            <img
+              src="/Screenshot 2025-10-22 125814.png"
+              alt="NarayanGrowth Logo"
+              className="w-10 h-10 object-contain"
+            />
+            <span className="text-xl font-bold text-white tracking-wide">
+              Narayan<span className="text-orange-500">Growth</span>
+            </span>
+          </div>
 
-        {/* DESKTOP NAV */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-white transition-colors">About</button>
-          <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-white transition-colors">Services</button>
-          <button onClick={() => scrollToSection('portfolio')} className="text-gray-300 hover:text-white transition-colors">Portfolio</button>
-          <button onClick={() => scrollToSection('testimonials')} className="text-gray-300 hover:text-white transition-colors">Testimonials</button>
-          <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-white transition-colors">Contact</button>
-          <Button onClick={() => scrollToSection('contact')} className="bg-orange-600 hover:bg-orange-700 text-white">
-            Get Started
-          </Button>
-        </nav>
+          {/* DESKTOP NAV */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <button onClick={() => scrollToSection("about")} className="text-gray-300 hover:text-white">About</button>
+            <button onClick={() => scrollToSection("services")} className="text-gray-300 hover:text-white">Services</button>
+            <button onClick={() => scrollToSection("portfolio")} className="text-gray-300 hover:text-white">Portfolio</button>
+            <button onClick={() => scrollToSection("testimonials")} className="text-gray-300 hover:text-white">Testimonials</button>
+            <button onClick={() => scrollToSection("contact")} className="text-gray-300 hover:text-white">Contact</button>
+            <Button onClick={() => scrollToSection("contact")} className="bg-orange-600 hover:bg-orange-700 text-white">
+              Get Started
+            </Button>
+          </nav>
 
-        {/* MOBILE MENU BUTTON */}
-        <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
-    </div>
-
-    {/* Mobile Menu */}
-    {isMenuOpen && (
-      <div className="md:hidden bg-black border-t border-gray-800">
-        <div className="px-4 py-4 space-y-3">
-          <button onClick={() => scrollToSection('about')} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md transition-colors">About</button>
-          <button onClick={() => scrollToSection('services')} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md transition-colors">Services</button>
-          <button onClick={() => scrollToSection('portfolio')} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md transition-colors">Portfolio</button>
-          <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md transition-colors">Testimonials</button>
-          <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md transition-colors">Contact</button>
-          <Button onClick={() => scrollToSection('contact')} className="w-full bg-orange-600 hover:bg-orange-700 text-white">
-            Get Started
-          </Button>
+          {/* MOBILE BUTTON */}
+          <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
       </div>
-    )}
-  </header>
-</div>
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-950 to-black">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Grow Your Business with Smart Digital Marketing & High-Performance Websites
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Transform your online presence with data-driven marketing strategies and cutting-edge web solutions that deliver measurable results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={() => scrollToSection('contact')} size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 py-6">
-                Get Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button onClick={() => scrollToSection('services')} size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-900 text-lg px-8 py-6">
-                View Services
-              </Button>
-            </div>
+
+      {/* MOBILE MENU */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-black border-t border-gray-800">
+          <div className="px-4 py-4 space-y-3">
+            <button onClick={() => scrollToSection("about")} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md">About</button>
+            <button onClick={() => scrollToSection("services")} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md">Services</button>
+            <button onClick={() => scrollToSection("portfolio")} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md">Portfolio</button>
+            <button onClick={() => scrollToSection("testimonials")} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md">Testimonials</button>
+            <button onClick={() => scrollToSection("contact")} className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-900 rounded-md">Contact</button>
+            <Button onClick={() => scrollToSection("contact")} className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+              Get Started
+            </Button>
           </div>
         </div>
-      </section>
+      )}
+    </header>
+
+    {/* HERO SECTION (NOW INSIDE SAME PARENT) */}
+    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-950 to-black">
+      <div className="max-w-7xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Grow Your Business with Smart Digital Marketing & High-Performance Websites
+          </h1>
+          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            Transform your online presence with data-driven marketing strategies and cutting-edge web solutions that deliver measurable results.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button onClick={() => scrollToSection("contact")} className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 py-6">
+              Get Free Consultation
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <Button onClick={() => scrollToSection("services")} className="border border-gray-600 text-white hover:bg-gray-900 text-lg px-8 py-6">
+              View Services
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</>
+
 
       {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
