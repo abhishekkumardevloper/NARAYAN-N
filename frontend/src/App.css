@@ -38,25 +38,4 @@ textarea:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.1);
 }
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.logo-text {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.logo-highlight {
-  color: #f97316; /* orange */
-}
 
