@@ -113,3 +113,30 @@ code {
         border-bottom-color: inherit;
     }
 }
+/* Logo container */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo image */
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Logo text */
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Highlight part */
+.logo-highlight {
+  color: #f97316; /* orange-500 */
+}
+
