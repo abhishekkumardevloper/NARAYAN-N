@@ -39,7 +39,6 @@ const Home = () => {
   };
 
   return (
-  <>
   <div className="min-h-screen bg-black">
     {/* Header */}
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
@@ -117,7 +116,6 @@ const Home = () => {
       </div>
     </section>
   </div>
-</>
 
 
       {/* About Section */}
